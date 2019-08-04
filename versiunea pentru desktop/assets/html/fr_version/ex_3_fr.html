@@ -1,0 +1,77 @@
+﻿<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="franceza, bacalaureat, proba orala">
+		<meta charset="UTF-8">
+		<title>Trouve la verset</title>
+		<link rel="icon" href="../../pictures/sigla.png">
+		<link rel="stylesheet" href="../../styles/ex_3.css">
+		<script src="../../scripts/jquery-3.2.1.min.js"></script>
+		<script src="../../melodies/melodies.txt"></script>
+		<script src="../../scripts/ex_3.js"></script>
+	</head>
+	<body onload="init();">
+		<div class="menu-bg">
+		</div>
+		<div class="top">
+			Écoutes et complètes
+			<img src="../../pictures/sigla.png">
+		</div>
+		<div id = "pre_menu" class="pre_menu">
+			<a id="btn_menu" class="btn_menu" href="#">MÉlODIES</a>
+		</div>
+		<div  id="menu" class="menu">
+			<span id="menu_elements"></span>
+		</div>
+		<img src="../../pictures/girl.jpg" class="gurl floating-effect">
+		<div class="container">
+			<div class="full">
+				<div class="center_div"><button class="btn_start">START!</button></div>
+				<audio id="audio_cantec" controls style="width:100%; margin-bottom: 10px;">
+				  <source id="src_cantec" src="../../melodies/cantec1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio>
+				<div class="div_video" style='display:none;'>
+					<video id="myvideo" width="100%" controls>
+						<source id="src_video" src="" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<div id="div_text" class="div_text">
+					
+				</div>
+				<div id="zona_btn" class="div_btn">
+					<div class="grup_btn1" id="grup_btn1" style="display:none;">
+						<a href="#" class="btn" Onclick="Reset_all();">RESTART</a><br>
+						<h2>Félicitations!<br><br> Vous avez la note:<span id="nota"></span></h2>
+						Mauvaises réponses: <span id="rasp_gresite"></span><br>Bonnes réponses:<span id="rasp_corecte"></span>
+					</div>
+					<div id="grup_btn2" class="grup_btn2">
+						<h2 style="float:left!important"><span id="text_vers_actual">1</span>/<span id="text_total_versuri"> </span></h2>
+						<h2 style="float:right!important">Temps restant <span id="timp">6:00</span></h2>
+						<table class="tabel_btn" >
+							<tr style="height:80px;">
+								<td style="width:80px;"><button Onclick="verifica(1)" class="btn_raspuns">A</button></td>
+								<td style="border-bottom:1px solid #c8c6c6;" id="btn_1" ><p id="raspuns_1">text</p></td>
+							<tr style="height:70px;">
+								<td><button Onclick="verifica(2)" class="btn_raspuns">B</button></td>
+								<td style="border-bottom:1px solid #c8c6c6;" id="btn_2"><p id="raspuns_2">text</p></td>
+							<tr style="height:70px;">
+								<td><button Onclick="verifica(3)" class="btn_raspuns">C</button></td>
+								<td id="btn_3"><p id="raspuns_3">text</p></td>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="full" style="display:none;">
+				<h2>Le texte résultant:</h2>
+				<form>
+					<textarea id="text_rezultat"></textarea>
+				</form>
+			</div>
+		</div>
+		<div class="bottom">
+			<marquee direction="right"> Écoute et apprendre le français </marquee>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html>	
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="franceza, bacalaureat, proba orala">
+		<meta charset="UTF-8">
+		<title>Écrivez la phrase correcte</title>
+		<link rel="icon" href="../../pictures/sigla.png">
+		<link rel="stylesheet" href="../../styles/style_2.css">	
+		<script src="../../scripts/jquery-3.2.1.min.js"></script>
+		<script src="../../scripts/icons.js"></script>	
+			
+	</head>
+	
+		<body>
+		
+			<div class="container" style="margin-top: 15px;">
+				
+				<h2>Ascultă cu atenţie şi scrie propoziţia în prima casetă, apoi tradu-o în cea de-a doua. Ai grijă la majuscule şi semnele de punctuaţie!</h2>
+				
+							
+					
+							<p id="nr_ex">Exerciţiul 1</p> 
+							
+							<button id="btn_play" onclick="play()" style="background-color:white;">
+								<img src="../../pictures/sound_on.png" width="50" height="50">
+							</button>
+							
+							<div>
+								<table class="dct">
+									<tr>
+										<td onclick="document.getElementById('rasp_fra').value=document.getElementById('rasp_fra').value+this.innerHTML;">À</td><td onclick="document.getElementById('rasp_fra').value=document.getElementById('rasp_fra').value+this.innerHTML;">Ç</td><td onclick="document.getElementById('rasp_fra').value=document.getElementById('rasp_fra').value+this.innerHTML;">É</td><td onclick="document.getElementById('rasp_fra').value=document.getElementById('rasp_fra').value+this.innerHTML;">È</td><td onclick="document.getElementById('rasp_fra').value=document.getElementById('rasp_fra').value+this.innerHTML;">Ê</td><td onclick="document.getElementById('rasp_fra').value=document.getElementById('rasp_fra').value+this.innerHTML;">Ô</td>
+									</tr>
+									<tr>
+										<td onclick="document.getElementById('rasp_fra').value=document.getElementById('rasp_fra').value+this.innerHTML;">à</td><td onclick="document.getElementById('rasp_fra').value=document.getElementById('rasp_fra').value+this.innerHTML;">ç</td><td onclick="document.getElementById('rasp_fra').value=document.getElementById('rasp_fra').value+this.innerHTML;">é</td><td onclick="document.getElementById('rasp_fra').value=document.getElementById('rasp_fra').value+this.innerHTML;">è</td><td onclick="document.getElementById('rasp_fra').value=document.getElementById('rasp_fra').value+this.innerHTML;">ê</td><td onclick="document.getElementById('rasp_fra').value=document.getElementById('rasp_fra').value+this.innerHTML;">ô</td>
+									</tr>
+								</table>
+							</div>
+							
+							<br><br><br>
+							
+							<h3 class="fix">Răspuns:</h3>&nbsp;&nbsp;&nbsp;
+							<button onmouseover="Afisare1()" onmouseout="Ascundere1()"><i class="fas fa-question"></i></button>
+							<div class="help" style="position:fixed;top:38%;margin-left:22%;">Diacriticele limbii franceze<br> sunt obligatorii!</div>				
+							
+							<input id="rasp_fra" onkeyup="gata1()" type="text" placeholder="Scrie..">
+							<img class="bifa" src="../../pictures/blank.jpg">
+							<div class="help" style="position:fixed;top:58%;margin-left:20%;">Este necesară utilizarea diacriticelor <br>limbii române.</div>	
+							<br><br>
+							
+							<h3 class="fix">Traducere:</h3>
+							<button onmouseover="Afisare2()" onmouseout="Ascundere2()"><i class="fas fa-question"></i></button>
+							
+							
+							<input id="rasp_ro" onkeyup="gata2()" type="text" placeholder="Scrie..">
+							<img class="bifa" src="../../pictures/blank.jpg">
+							
+							
+							
+							
+							<img id="pic" src="../../pictures/sigla.png">
+							
+							<audio id="audio" hidden>
+								<source src="../../sounds/sound_1.mp3"> 
+							</audio>
+							
+							<div class="buttons">
+								
+								<button class="btn" onclick="back()">&#10094; Înapoi</button>
+								<button class="btn" onclick="next()">Mai departe &#10095;</button>
+							</div>	
+					
+			</div>
+			
+			<div class="container ctn" style="height:500px;display:none;margin-top:100px;">
+				
+				<h2>Felicitări! </h2>
+				<h2>Ai ajuns la finalul testului.</h2>
+				<h3> Ai obtinut nota:</h3>
+				<p id="nota">dsa</p>
+							
+				<p>
+					<h2 onclick="afisare_raspunsuri()" style="font-size:15pt;text-decoration:orange;"><u>Vezi răspunsurile corecte</u></h2>
+				</p>	
+			</div>
+			
+			<div class="container ctn" style="height:500px;display:none;margin-top:100px;">
+				
+				<font style="line-height:50px;font-size:15pt;">
+					<span></span><br>
+					<span></span><br>
+					<span></span><br>
+					<span></span><br>
+					<span></span><br>
+					<span></span><br>
+					<span></span><br>
+					<span></span><br>
+					<span></span><br>
+					<span></span>
+				</font>
+			
+			</div>
+	<script src="../../scripts/script2.js" type="text/javascript" language="javascript"></script>
+
+		</body>

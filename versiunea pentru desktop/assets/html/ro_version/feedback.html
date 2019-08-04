@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html>	
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="franceza, bacalaureat, proba orala">
+		<meta charset="UTF-8">
+		<title>Feedback</title>
+		<link rel="icon" href="../../pictures/sigla.png">
+		<link rel="stylesheet" href="../../styles/style_1.css">
+		<link rel="stylesheet" href="../../styles/style_2.css">
+		<script src="../../scripts/jquery-3.2.1.min.js"></script>
+		<script src="../../scripts/script3.js"></script>
+		<script src="../../scripts/icons.js"></script>
+	</head>
+	
+	<body>
+		<div class="container" style="margin-bottom:50px">
+		
+			<form action="mailto:teofangradinariu995@yahoo.com">
+
+				<label for="fname">Nume</label>
+				<input required type="text" id="fname" name="firstname" placeholder="Scrie..">
+
+				<label for="lname">Prenume</label>
+				<input required type="text" id="lname" name="lastname" placeholder="Scrie..">
+
+				<label for="country">Ţara</label>
+				<select id="country" name="country">
+				  <option value="france">Franţa</option>
+				  <option value="romania">Romania</option>
+				  <option value="alta">Alta..</option>
+				</select>
+				
+				<label for="opinion">Cât de mult te-a ajutat acest site educativ?:</label>
+				<select required id="opinion" name="country">
+				  <option value="australia">Foarte puţin</option>
+				  <option value="canada">Puţin</option>
+				  <option value="canada">Destul</option>
+				  <option value="usa">Mult</option>
+				  <option value="canada">Foarte mult</option>
+				</select>
+				
+				<label for="subject">Alte sugestii, comentarii:</label>
+				<textarea id="subject" name="subject" placeholder="Scrie.." style="height:110px"></textarea>
+
+				<input type="reset" value="Reset">
+				<input type="submit" value="Submit" onclick="alert('Multumim!')">
+			
+			</form>
+			
+		</div>
+	
+	</body>
+	
+</html>

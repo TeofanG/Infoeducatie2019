@@ -1,0 +1,2 @@
+***Pentru a putea vizualiza sursa proiectului, se navigheaza la adresa http://ai2.appinventor.mit.edu, apoi se logheaza cu contul de Gmail si se adauga proiectul prin incarcarea fisierului cu extensia ".aia" din acest folder.***
+*** Fisierul .apk este folosit pentru instalarea pe dispozitivul mobil ***
